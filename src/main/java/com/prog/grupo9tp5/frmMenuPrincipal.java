@@ -143,6 +143,7 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
         int y = (escritorio.getHeight() - frame.getHeight()) / 2;
         frame.setLocation(x, y);
     }
+
     private void mnuAgregarCiudadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuAgregarCiudadActionPerformed
         escritorio.removeAll();
         escritorio.repaint();

@@ -20,10 +20,12 @@ public class frmAgregar extends javax.swing.JInternalFrame {
         initComponents();
         llenarComboCiudad();  
     }
+
     private void llenarComboCiudad() {
-    for (String ciudad : frmMenuPrincipal.ciudades) {
-        cmbCiudad.addItem(ciudad);
-    }}
+        for (String ciudad : frmMenuPrincipal.ciudades) {
+            cmbCiudad.addItem(ciudad);
+        }
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -265,15 +267,15 @@ public class frmAgregar extends javax.swing.JInternalFrame {
         }
     }//GEN-LAST:event_btnGuardarActionPerformed
     private void limpiarCampos() {
-    txtDni.setText("");
-    txtNombre.setText("");
-    txtApellido.setText("");
-    txtDomicilio.setText("");
-    txtTelefono.setText("");
-    if (cmbCiudad.getItemCount() > 0) {
-        cmbCiudad.setSelectedIndex(0);
+        txtDni.setText("");
+        txtNombre.setText("");
+        txtApellido.setText("");
+        txtDomicilio.setText("");
+        txtTelefono.setText("");
+        if (cmbCiudad.getItemCount() > 0) {
+            cmbCiudad.setSelectedIndex(0);
+        }
     }
-}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
