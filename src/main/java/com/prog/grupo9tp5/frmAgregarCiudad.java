@@ -104,7 +104,7 @@ public class frmAgregarCiudad extends javax.swing.JInternalFrame {
             return;
         }
 
-        //frmMenuPrincipal.ciudades.add(nombreCiudad);
+        frmMenuPrincipal.ciudades.add(nombreCiudad);
         JOptionPane.showMessageDialog(this, "Ciudad agregada correctamente.");
         txtNombreCiudad.setText("");
     }//GEN-LAST:event_btnGuardarActionPerformed
