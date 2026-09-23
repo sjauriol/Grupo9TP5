@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author gonza
+ * @author Grupo9
  */
 public class frmAgregar extends javax.swing.JInternalFrame {
 

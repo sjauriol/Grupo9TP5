@@ -91,7 +91,15 @@ public class frmBorrarCliente extends javax.swing.JInternalFrame {
             new String [] {
                 "DNI", "Apellido", "Nombre", "Domicilio", "Ciudad", "Teléfono"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane2.setViewportView(tblClientes);
 
         btnBorrar.setText("Borrar");

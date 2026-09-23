@@ -55,7 +55,7 @@ public class frmBuscarCliente extends javax.swing.JInternalFrame {
 
         setClosable(true);
 
-        jDesktopPane1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Búsqueda de Clientes por Teléfono", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 18), new java.awt.Color(255, 255, 255))); // NOI18N
+        jDesktopPane1.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED), "Búsqueda de Clientes por Teléfono", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 18))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -80,6 +80,18 @@ public class frmBuscarCliente extends javax.swing.JInternalFrame {
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Teléfono:");
+
+        txtTelefono.setEditable(false);
+
+        txtNombre.setEditable(false);
+
+        txtApellido.setEditable(false);
+
+        txtDni.setEditable(false);
+
+        txtCiudad.setEditable(false);
+
+        txtDomicilio.setEditable(false);
 
         lstTelefonos.addListSelectionListener(this::lstTelefonosValueChanged);
         jScrollPane1.setViewportView(lstTelefonos);
