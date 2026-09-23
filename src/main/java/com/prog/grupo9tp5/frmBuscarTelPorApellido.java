@@ -64,7 +64,15 @@ public class frmBuscarTelPorApellido extends javax.swing.JInternalFrame {
             new String [] {
                 "Dni", "Apellido", "Nombre", "Dirección", "Ciudad", "Teléfono"
             }
-        ));
+        ) {
+            boolean[] canEdit = new boolean [] {
+                false, false, false, false, false, false
+            };
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
         jScrollPane2.setViewportView(tblClientes);
 
         jDesktopPane1.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
