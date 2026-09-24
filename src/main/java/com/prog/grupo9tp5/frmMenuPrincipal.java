@@ -78,7 +78,7 @@ public class frmMenuPrincipal extends javax.swing.JFrame {
         mnuClientes.add(mnuAgregarCliente);
 
         mnuBuscarCliente.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_B, java.awt.event.InputEvent.ALT_DOWN_MASK | java.awt.event.InputEvent.CTRL_DOWN_MASK));
-        mnuBuscarCliente.setText("BuscarCliente");
+        mnuBuscarCliente.setText("Buscar Cliente");
         mnuBuscarCliente.addActionListener(this::mnuBuscarClienteActionPerformed);
         mnuClientes.add(mnuBuscarCliente);
 
